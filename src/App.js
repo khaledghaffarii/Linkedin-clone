@@ -1,10 +1,16 @@
-
-import './App.css';
-
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Login from "./components/Login";
 function App() {
   return (
     <div className="App">
-  l'ets build the linkedine app
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
