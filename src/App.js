@@ -11,6 +11,10 @@ function App() {
           <Route exact path="/">
             <Login />
           </Route>
+          <Route exact path="/home">
+            <Header />
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>
