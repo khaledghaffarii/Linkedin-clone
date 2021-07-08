@@ -108,7 +108,7 @@ const SocialAction = styled.div`
     cursor: pointer;
     &:hover {
       transform: translateY(-3px);
-      background-color:#ebebebeb
+      background-color: #ebebebeb;
     }
     @media (min-width: 768px) {
       span {
@@ -128,7 +128,6 @@ const SocialCounts = styled.div`
   list-style: none;
   a {
     text-decoration: none;
-    margin-right: 15px;
   }
   li {
     margin-right: 5px;
@@ -149,17 +148,16 @@ const Description = styled.div`
   text-align: left;
 `;
 const SharedImg = styled.div`
-margin-top:8px;
-width: 100%;
-display:block;
-position: relative;
-background-color:#f99a9b;
-img{
-  object-fit: 100%;
-  width:100%;
-  height:100%;
-}
-
+  margin-top: 8px;
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: #f99a9b;
+  img {
+    object-fit: 100%;
+    width: 100%;
+    height: 100%;
+  }
 `;
 const Container = styled.div`
   grid-area: main;
