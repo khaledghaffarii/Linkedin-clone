@@ -1,7 +1,7 @@
 import { auth, provider } from "../firebase";
 
 
-export function signingInAPI () {
+export function SignInAPI () {
 
 return (dispatch) =>{
 auth
