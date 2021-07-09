@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { connect } from "react-redux";
+import { SignInAPI } from "../actions";
 const Login = (props) => {
   return (
     <Container>
@@ -161,7 +162,8 @@ const Google = styled.button`
   }
 `;
 const mapStateProps = (state) => {
-  return {}
-}
- const mapDispatchToProps = (dispatch) =>({})
+  return {};
+};
+const mapDispatchToProps = (dispatch) => ({});
+
 export default connect(mapStateProps, mapDispatchToProps)(Login);
