@@ -21,7 +21,7 @@ const Login = (props) => {
         </Hero>
         <Form>
           <Google>
-            <img style={{marginRight:10}} src="/images/google.svg" alt="" />
+            <img style={{ marginRight: 10 }} src="/images/google.svg" alt="" />
             Sign in with Google
           </Google>
         </Form>
@@ -95,7 +95,7 @@ const Section = styled.section`
   max-width: 1128px;
   align-items: center;
   margin: auto;
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     margin: auto;
     min-height: 0px;
   }
@@ -123,7 +123,7 @@ const Hero = styled.div`
     position: absolute;
     bottom: -2px;
     right: -150px;
- 
+
     @media (max-width: 768px) {
       top: 230px;
       width: initial;
@@ -160,4 +160,8 @@ const Google = styled.button`
     color: rgba(0, 0, 0, 0.75);
   }
 `;
-export default Login;
+const mapStateProps = (state) => {
+  return {}
+}
+ const mapDispatchToProps = (dispatch) =>({})
+export default connect(mapStateProps, mapDispatchToProps)(Login);
