@@ -21,7 +21,7 @@ const Login = (props) => {
           <img src="/images/login-hero.svg" alt="" />
         </Hero>
         <Form>
-          <Google>
+          <Google onClick={()=> props.SignIn()} >
             <img style={{ marginRight: 10 }} src="/images/google.svg" alt="" />
             Sign in with Google
           </Google>
@@ -164,6 +164,8 @@ const Google = styled.button`
 const mapStateProps = (state) => {
   return {};
 };
-const mapDispatchToProps = (dispatch) => ({});
+const mapDispatchToProps = (dispatch) => ({
+  signIn: () => dispatch(SignInAPI),
+});
 
 export default connect(mapStateProps, mapDispatchToProps)(Login);
