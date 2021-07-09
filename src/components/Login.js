@@ -1,7 +1,22 @@
 import styled from "styled-components";
 import { connect } from "react-redux";
 import { SignInAPI } from "../actions";
-const Login = (props) => {
+import { auth, provider } from "../firebase";
+function Login (props)  {
+
+const SingIn=(e)=>{
+  
+  e.preventDefault();
+  auth
+    .signInWithPopup(provider)
+    .then((payload) => {
+      console.log(payload);
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+}
+
   return (
     <Container>
       <Nav>
@@ -21,7 +36,7 @@ const Login = (props) => {
           <img src="/images/login-hero.svg" alt="" />
         </Hero>
         <Form>
-          <Google onClick={()=> props.SignIn()} >
+          <Google onClick={SingIn }>
             <img style={{ marginRight: 10 }} src="/images/google.svg" alt="" />
             Sign in with Google
           </Google>
