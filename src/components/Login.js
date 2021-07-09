@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { connect } from "react-redux";
 const Login = (props) => {
   return (
     <Container>
